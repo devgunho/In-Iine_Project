@@ -1,11 +1,5 @@
 # 광복절 해커톤
 
-**Link :  https://bit.ly/inlinesk***
-
-[인라인스케이트팀 신청서](https://www.notion.so/a0a4d75318724fddad69056555f09ed2)
-
-------
-
 **팀명 : 인라인 스케이트**
 
 **참가팀원 : 권대명, 임지훈, 박건호**
@@ -14,11 +8,11 @@
 
 **프로젝트 목표 :**
 
-- **나는 IDS/IPS의 사용법을 알고, In-line 방식의 네트워크 침입탐지/차단 시스템을 구축할 수 있다.**
+- **IDS/IPS의 사용법을 알고, In-line 방식의 네트워크 침입탐지/차단 시스템을 구축**
 
-- **나는 Suricata 오픈소스의 사용법을 알고 시스템, 네트워크 및 룰셋 설정방법 등을 자유롭게 구축할 수 있다.**
+- **Suricata 오픈소스의 사용법을 알고 시스템, 네트워크 및 룰셋 설정방법 등을 자유롭게 구축**
 
-- **나는 Suricata의 로그를 이해하고 보안관제를 위한 모니터링 시스템을 만들 수 있다.**
+- **Suricata의 로그를 이해하고 보안관제를 위한 모니터링 시스템을 구축**
 
   
 
@@ -34,12 +28,16 @@
 sudo ufw disable
 ```
 
+
+
 ### Install Build Dependencies
 
 ```
 sudo apt install subversion g++ zlib1g-dev build-essential git python
 sudo apt install libncurses5-dev gawk gettext unzip file libssl-dev wget
 ```
+
+
 
 ### **OpenWrt Install**
 
@@ -56,7 +54,7 @@ git checkout openwrt-18.06
 
   
 
-# Suricata Install
+### Suricata Install
 
 - Install  Dependencies / MD5, GeoIP, Unix Socket ...
 
@@ -74,6 +72,8 @@ git checkout openwrt-18.06
   cd /tmp wget http://www.openinfosecfoundation.org/download/suricata-2.0.6.tar.gz tar -xvzf suricata-2.0.6.tar.gz cd suricata-2.0.6 ./configure --prefix=/usr/ --sysconfdir=/etc/ --localstatedir=/var/ \ --enable-unix-socket --enable-profiling --enable-geoip \ --with-libnss-libraries=/usr/lib64 --with-libnss-includes=/usr/include/nss3 \ --with-libnspr-libraries=/usr/lib64 --with-libnspr-includes=/usr/include/nspr4 make && make install && ldconfig make install-full
   ```
 
+
+
 ### Nginx Setting (In Server Computer)
 
 ```
@@ -87,7 +87,9 @@ systemctl start nginx
 service nginx restart
 ```
 
-# **Snorby** Install
+
+
+### Snorby Install
 
 ```
 sudo apt-get install gcc g++ build-essential libssl-dev libreadline6-dev zlib1g-dev linux-headers-generic libsqlite3-dev \\
@@ -95,6 +97,8 @@ libxslt-dev libxml2-dev imagemagick git-core libmysqlclient-dev mysql-server lib
 ```
 
 ------
+
+
 
 # Reference Sources
 
@@ -119,24 +123,26 @@ apachectl restart
 httpd restart
 ```
 
-------
+
 
 **OpenWrt 패키지 빌드 환경 세팅**
 
-[**Ubuntu(우분투) PC에 OpenWRT 개발 환경(크로스 컴파일) 설치**](https://skylit.tistory.com/76)
+**[Ubuntu(우분투) PC에 OpenWRT 개발 환경(크로스 컴파일) 설치](https://skylit.tistory.com/76)**
 
-[**OpenWrt 기본 방화벽 세팅](https://openwrt.org/ko/docs/guide-user/firewall_configuration) (Official Site)**
+**[OpenWrt 기본 방화벽 세팅](https://openwrt.org/ko/docs/guide-user/firewall_configuration) (Official Site)**
+
+
 
 > **Suricata**
 
 **Suricata Installation (Officail Site)**
 
-[**Suricata 소개 및 설치 및 구성 활용 & 오픈스택 환경**](https://sola99.tistory.com/401?category=529639)
+**[Suricata 소개 및 설치 및 구성 활용 & 오픈스택 환경](https://sola99.tistory.com/401?category=529639)**
 
-[**Suricata를 이용한 포트 미러링으로 오픈스택 IDS 테스트**](https://ryusstory.tistory.com/entry/suricata를-이용한-포트-미러링으로-오픈스택-IDS-테스트)
+**[Suricata를 이용한 포트 미러링으로 오픈스택 IDS 테스트](https://ryusstory.tistory.com/entry/suricata를-이용한-포트-미러링으로-오픈스택-IDS-테스트)**
+
+
 
 > **Snorby**
 
-네트워크 보안 관제를 웹을 통해 쉽게 확인할수 있는 오픈소스
-
-**Suricata, Snorby & Barnyard2 Set Up Guide**
+**네트워크 보안 관제를 웹을 통해 쉽게 확인할수 있는 오픈소스**

@@ -110,15 +110,12 @@ apt-get update
 apt-get install apache2
 systemctl status apache2
 
-# 아파치 시작
 apachectl start
 httpd start
 
-# 아파치 중지
 apachectl stop
 httpd stop
 
-# 아파치 리스타트
 apachectl restart
 httpd restart
 ```
@@ -133,7 +130,7 @@ httpd restart
 
 
 
-> **Suricata**
+### **Suricata**
 
 **Suricata Installation (Officail Site)**
 
@@ -143,6 +140,6 @@ httpd restart
 
 
 
-> **Snorby**
+### **Snorby**
 
 **네트워크 보안 관제를 웹을 통해 쉽게 확인할수 있는 오픈소스**

@@ -20,7 +20,11 @@
 
 ![Untitled](https://user-images.githubusercontent.com/41619898/63038888-22b80780-befd-11e9-8d93-c1e4c36b9e7f.png)
 
+
+
 ------
+
+
 
 ### Ubuntu Firewall Down
 
@@ -96,6 +100,8 @@ sudo apt-get install gcc g++ build-essential libssl-dev libreadline6-dev zlib1g-
 libxslt-dev libxml2-dev imagemagick git-core libmysqlclient-dev mysql-server libmagickwand-dev default-jre ruby1.9.3
 ```
 
+
+
 ------
 
 
@@ -122,17 +128,21 @@ httpd restart
 
 
 
-**OpenWrt 패키지 빌드 환경 세팅**
+---
 
-**[Ubuntu(우분투) PC에 OpenWRT 개발 환경(크로스 컴파일) 설치](https://skylit.tistory.com/76)**
 
-**[OpenWrt 기본 방화벽 세팅](https://openwrt.org/ko/docs/guide-user/firewall_configuration) (Official Site)**
+
+### **OpenWrt 패키지 빌드 환경 세팅**
+
+**[Ubuntu(우분투) PC에 OpenWRT 개발 환경 (크로스 컴파일) 설치](https://skylit.tistory.com/76)**
+
+**[OpenWrt 기본 방화벽 세팅 (Official Site)](https://openwrt.org/ko/docs/guide-user/firewall_configuration) **
 
 
 
 ### **Suricata**
 
-**Suricata Installation (Officail Site)**
+**[Suricata Installation (Officail Site)](https://suricata.readthedocs.io/en/suricata-4.1.3/install.html)**
 
 **[Suricata 소개 및 설치 및 구성 활용 & 오픈스택 환경](https://sola99.tistory.com/401?category=529639)**
 
@@ -142,4 +152,6 @@ httpd restart
 
 ### **Snorby**
 
-**네트워크 보안 관제를 웹을 통해 쉽게 확인할수 있는 오픈소스**
+**https://github.com/Snorby/snorby**
+
+- **네트워크 보안 관제를 웹을 통해 쉽게 확인할수 있는 오픈소스**

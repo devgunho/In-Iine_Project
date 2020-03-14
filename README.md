@@ -136,7 +136,7 @@ httpd restart
 
 **[Ubuntu(우분투) PC에 OpenWRT 개발 환경 (크로스 컴파일) 설치](https://skylit.tistory.com/76)**
 
-**[OpenWrt 기본 방화벽 세팅 (Official Site)](https://openwrt.org/ko/docs/guide-user/firewall_configuration) **
+**[OpenWrt 기본 방화벽 세팅 (Official Site)](https://openwrt.org/ko/docs/guide-user/firewall_configuration)**
 
 
 
